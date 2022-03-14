@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Mukesh Prajapat (Software Engineer)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+   .body
+   {
+    background-color: gray;
+    animation: myanimation 5s infinite;
+   }
+   /* #header_name
+   {
+       margin: 0 0px;
+       text-align: center;
+       color:white;
+       overflow: hidden;
+   } */
+   .container{
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+.summary
+{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 800;
+  font-size: 20px;  
+  color: #355c7d;
+  /* animation: type 2s infinite forwards; */
+}
+    .container h1:nth-child(1) {
+  color: #355c7d;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0 auto auto auto;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  /* animation: type 2s infinite forwards; */
+}
+
+.container h1:nth-child(2) {
+  opacity: 0;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto auto auto;
+  background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
+  font-weight: 800;
+  font-size: 50px;  
+  width: 430px;
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  animation: shring-animation 5s infinite 3s forwards;
+  /* blink .2s step-end infinite alternate; */
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid orange;
+  }
+  100%{
+    border-right: none;
+  }
+}
+
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid transparent;
+
+  }
+}
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+   @keyframes myanimation {
+  0% {background-color: gray;}
+  25%{background-color:black;}
+  50%{background-color:cyan;}
+  75%{background-color:gray;}
+  100% {background-color:honeydew;}
+}
+    </style>
+    <body class="body">
+        <div class="container">
+            <h1>Hello World! <br> I am</h1>
+            <h1>Mukesh</h1>
+            <p class="summary"> 
+                Having around 3 years of competitive experience in the IT industry as a software engineer in the technologies such as C#, ASP.NET Framework, MVC, SQL Server, TypeScript, and JavaScript.
+            </p>
+        </div>
+    </body>
+</html>
